@@ -1,0 +1,209 @@
+body {
+  font-family: "Lato", sans-serif;
+  background-color: lightblue;
+}
+
+/* Fixed sidenav, full height */
+.sidenav {
+  height: 100%;
+  width: 200px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+}
+
+/* Style the sidenav links and the dropdown button */
+.sidenav a, .dropdown-btn {
+  padding: 8px 8px 8px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+}
+
+/* On mouse-over */
+.sidenav a:hover, .dropdown-btn:hover {
+  color: #f1f1f1;
+}
+
+/* Main content */
+.main {
+  margin-left: 200px; /* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+.active {
+  background-color: green;
+  color: white;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+.dropdown-container {
+  display: none;
+  background-color: #262626;
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+.clock {
+  width: 300px;
+  overflow: hidden;
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+.dH {
+  float: left;
+  font-size: 15px;
+}
+
+.label_user {
+  float: right;
+  font-size: 15px;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.main-row {
+  margin-left: 200px;
+  padding: 0px 10px;
+}
+
+.aside-header-title {
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.aside-header-ol {
+  list-style: none;
+  display: flex;
+  text-align: left;
+  margin: 0px;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  background-color: #f1f1f1;
+  width: 300px;
+  height: 120px;
+  margin: 10px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+}
+
+.login-email{
+  width:300px;
+  height:100px;
+  margin-top: 25px; 
+  margin-left: 40%;
+  display: table;
+}
+
+.login-text{
+  text-align:center;
+  font-weight: 700;
+  font-size: 2rem; 
+}
+
+input[type=email], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.btn-add {
+  float: right;
+  margin-right: 35px;
+}
+
+#myInput {
+  background-image: url('../css/searchicon.png');
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  width: 94.5%;
+  font-size: 16px;
+  padding: 12px 20px 12px 40px;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+}
+
+#myTable {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid black;
+  font-size: 18px;
+}
+
+#myTable th {
+  text-align: center;
+  border-left: 1px solid black;
+  padding: 12px;
+}
+
+#myTable td {
+  text-align: left;
+  border-left: 1px solid black;
+  padding: 12px;
+}
+
+#myTable tr {
+  border: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+#myTable tr.header, #myTable tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Some media queries for responsiveness */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+@media screen and (max-width: 968px) {
+  .notif-top-right {margin-left: 115px;}
+}
+
+@media screen and (max-width: 515px) {
+  .notif-top-right {margin-left: 0px;}
+}
